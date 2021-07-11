@@ -45,7 +45,7 @@
 }
 /* Секция с ценами */
 .price {
-  background: #46b814 url(../img/prices/prices-bg.jpg) center;
+  background: #46b814 url(../img/prices/prices-bg.webp) center;
   /* Карточки с тарифами */
 }
 .price-header-btn {
@@ -98,7 +98,7 @@
 /* Секция с отзывами */
 .feedback {
   position: relative;
-  background: url(../img/feedback/feedback-bg.png) center no-repeat;
+  background: url(../img/feedback/feedback-bg.webp) center no-repeat;
   background-size: cover;
   padding-top: 10rem;
   /* Форма обратной связи */
@@ -186,7 +186,7 @@
 }
 /* Схема работы */
 .scheme {
-  background: url(../img/scheme/scheme-bg.png) bottom -10rem right -15rem no-repeat;
+  background: url(../img/scheme/scheme-bg.webp) bottom -10rem right -15rem no-repeat;
   background-size: 65rem;
 }
 .scheme-block {
@@ -298,7 +298,7 @@
 }
 /* Материалы */
 .materials {
-  background: url(../img/materials/materials-bg.jpg) center no-repeat;
+  background: url(../img/materials/materials-bg.webp) center no-repeat;
   background-size: cover;
 }
 .materials-slider {
@@ -321,7 +321,7 @@
 }
 /* Посмотрите как мы работаем */
 .tour {
-  background: url(../img/tour/tour-bg.jpg) center no-repeat;
+  background: url(../img/tour/tour-bg.webp) center no-repeat;
   background-size: cover;
 }
 .tour-subtitle {
@@ -350,7 +350,7 @@
 }
 /* Контакты */
 .contacts {
-  background: url(../img/contacts/contacts-bg.jpg) center no-repeat;
+  background: url(../img/contacts/contacts-bg.webp) center no-repeat;
   background-size: cover;
   /* Заголовок для формы */
 }
