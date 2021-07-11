@@ -301,6 +301,9 @@
   background: url(../img/materials/materials-bg.webp) center no-repeat;
   background-size: cover;
 }
+.materials a {
+  text-decoration: none;
+}
 .materials-slider {
   padding-top: 3rem;
 }
