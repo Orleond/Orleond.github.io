@@ -88,7 +88,7 @@
         }
         /* Typography */
         section {
-        padding: 10rem 0;
+        padding: 10rem 0 5rem;
         }
         .section-header {
         padding: 2rem 0 10rem;
@@ -119,7 +119,7 @@
         margin-top: 10rem;
         /* Главный заголовок */
         }
-        .main-content h1 {
+        .main-content h1, .main-title h2 {
         margin-top: 0;
         margin-bottom: 4rem;
         font-family: 'ProximaNova_bold', sans-serif;
@@ -228,7 +228,7 @@
             <div class="main-content">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="main-title">
+                        <div class="main-title wow fadeInLeft">
                             <h1>Автоматизированная штукатурка стен</h1>
                             <p class="main-subtitle">Идеально ровные стены <br>в кратчайшие сроки</p>
                             <span>Стоимость работ <br>от <strong>300</strong> руб/м<sup>2</sup></span>
@@ -238,13 +238,13 @@
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 col-md-8 offset-md-2">
-                        <div class="main-form">
+                        <div class="main-form wow fadeInRight">
                             <h2 class="main-form-header">Для расчета точной стоимости <br>закажите <strong>выезд замерщика</strong></h2>
                             <form class="form" action="#">
                                 <label for="input-name-1">Ваше имя</label>
-                                <input class="form-input" id="input-name-1" type="text">
-                                <label for="phone-1">Номер телефона</label>
-                                <input class="form-input" id="phone-1" type="text">
+                                <input class="form-input" required id="input-name-1" type="text">
+                                <label for="phone">Номер телефона</label>
+                                <input class="form-input" required id="phone" type="text">
                                 <button class="form-btn button" type="submit">Оставьте заявку</button>
                                 <small>Подарок в день обращения</small>
                             </form>
@@ -258,11 +258,13 @@
 
     <section class="features">
         <div class="container">
-            <h2 class="section-header">
-                Преимущества работы с нами
-            </h2>          
+            <div class="section-header">                
+                <h2>
+                    Преимущества работы с нами
+                </h2>          
+            </div>
             <div class="features-slider">
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.1s">
                     <div class="features-img">
                         <picture>
                             <img src="img/features/coin.webp" alt="Платите по факту">
@@ -271,7 +273,7 @@
                     <h3>Платите по факту</h3>
                     <p>Вы оплачиваете выполненные работы только после их выполнения <br>Никаких скрытых доплат и промежуточных платежей</p>
                 </div>
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.2s">
                     <div class="features-img">
                         <picture>
                             <img src="img/features/folder.webp" alt="Заключаем договор">
@@ -280,7 +282,7 @@
                     <h3>Заключаем договор</h3>
                     <p>Перед началом работ заключаем договор на юридическое лицо. <br>Вы можете быть уверены, что все обязательства будут выполнены.</p>
                 </div>
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.3s">
                     <div class="features-img">
                         <picture>
                             <img src="img/features/clock.webp" alt="Точно в срок">
@@ -289,7 +291,7 @@
                     <h3>Точно в срок</h3>
                     <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше.</p>
                 </div>
-                <div class="features-block">
+                <div class="features-block wow fadeInUp" data-wow-delay="0.4s">
                     <div class="features-img">
                         <picture>
                             <img src="img/features/piggy-bank.webp" alt="Экономьте на материалах">
@@ -320,7 +322,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
-                    <div class="price-block">
+                    <div class="price-block wow fadeInUp" data-wow-delay="0.1s">
                         <h4>Штукатурка вашим материалом</h4>
                         <img src="img/prices/1.webp" alt="Штукатурка вашим материалом">
                         <span class="price-tag">от 300 руб/м<sup>2</sup></span>
@@ -332,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
-                    <div class="price-block">
+                    <div class="price-block wow fadeInUp" data-wow-delay="0.2s">
                         <h4>Штукатурка под шпаклёвку</h4>
                         <img src="img/prices/2.webp" alt="Штукатурка под шпаклёвку">
                         <span class="price-tag">от 530 руб/м</span>
@@ -346,7 +348,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">
-                    <div class="price-block">
+                    <div class="price-block wow fadeInUp" data-wow-delay="0.3s">
                         <h4>Штукатурка под обои</h4>
                         <img src="img/prices/3.webp" alt="Штукатурка под обои">
                         <span class="price-tag">от 560 руб/м</span>
@@ -916,9 +918,16 @@
         </div>
     </div>
 
-
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+        jQuery(function($){
+            $("#phone").mask("+375(99) 999-99-99");
+        });
+    </script>
+    <!-- Подключаем скрипт анимации -->
+    <script>new WOW().init();</script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- Подключаем стили slick slider -->
     <link rel="stylesheet" href="slick/slick.css">
@@ -929,6 +938,8 @@
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="js/fotorama.js"></script>
 
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Инициализируем слайдер -->
     <script>
         $(document).ready(function(){
