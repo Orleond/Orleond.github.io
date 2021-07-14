@@ -335,6 +335,9 @@
 .upsell {
   background: #286b0a;
 }
+.upsell .section-header {
+  padding-bottom: 2rem;
+}
 .upsell-block {
   min-height: 30rem;
   text-align: center;
@@ -352,6 +355,10 @@
 .upsell-block p {
   font-size: 2rem;
 }
+.upsell button {
+  margin-top: 1rem;
+  width: 70%;
+}
 /* Контакты */
 .contacts {
   background: url(../img/contacts/contacts-bg.webp) center no-repeat;
@@ -360,6 +367,7 @@
 }
 .contacts h2 {
   font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3rem;
 }
 .contacts p {
   font-size: 1.5rem;
@@ -435,9 +443,12 @@ footer {
 .popup-header {
   font-family: 'ProximaNova_bold', sans-serif;
 }
-@media (max-width: 1200) {
+@media (max-width: 1200px) {
   .price-block {
     min-height: 58rem;
+  }
+  .price-block h4 {
+    font-size: 1.6rem;
   }
   .feedback-form {
     padding: 3rem 5rem;
@@ -513,6 +524,9 @@ footer {
   .footer-dev-logo {
     text-align: center;
   }
+  .upsell-block button {
+    width: 43%;
+  }
 }
 @media (max-width: 768px) {
   .main {
@@ -537,5 +551,24 @@ footer {
     padding: 0;
     background: none;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+  section {
+    padding-top: 5rem;
+  }
+  .feedback {
+    padding-top: 5rem;
+  }
+  .upsell-block button {
+    width: 60%;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 6px;
   }
 }
