@@ -2,7 +2,7 @@ const getGoods = () => {
     const links = document.querySelectorAll('.navigation-link');
     
     const getData = (nameLink) => {        
-        fetch('/db/db.json')
+        fetch('../db/db.json')
         .then((res) => res.json())
         .then((data) => {
             localStorage.setItem(nameLink, JSON.stringify(data));
