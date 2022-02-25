@@ -51,7 +51,7 @@ const search = () => {
         getData(input.value);
     });
     
-    if (window.location.pathname !== "goods.html") {
+    if (window.location.pathname !== "/wildberriesjs/goods.html") {
         more.addEventListener('click', () => {
             getData('');
         });
